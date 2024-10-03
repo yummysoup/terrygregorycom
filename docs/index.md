@@ -1,6 +1,6 @@
 ---
 layout: default
-title: TerryGregory.com
+title: badger
 ---
 
 # badger
