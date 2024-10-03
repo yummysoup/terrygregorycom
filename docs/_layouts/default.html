@@ -7,14 +7,23 @@
     {% include head.html %}
 </head>
 <body>
-    <header>
-      <h1>Terry Gregory</h1>
-    </header>
-    
-    <main>
-        {{ content }}
-    </main>
+    <div class="content">
+        <header>
+            <h1>Terry Gregory</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/projects">Projects</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            {{ content }}
+        </main>
 
-    <footer<p>&copy; 2024 Terry Gregory</p></footer>
+        <footer><p>&copy; {{ site.time | date: '%Y' }} Terry Gregory</p></footer>
+    </div>
 </body>
 </html>

@@ -1,0 +1,34 @@
+---
+title: Projects
+layout: default
+projects:
+- name: Piano Practice Log
+  demo: https://yummysoup.github.io/piano-practice-log/piano-practice-log.html
+  repo: https://github.com/yummysoup/piano-practice-log
+  technologies: javascript
+  description: A printable checklist for daily practice between weekly lessons
+
+- name: DigitGroup 
+  repo: https://github.com/yummysoup/digitgroup
+  description: Colourizes large numbers in an ansi terminal to highlight thousands groups.
+
+- name: BoggleSolver 
+  demo: https://yummysoup.github.io/boggle-solver/html/
+  repo: https://github.com/yummysoup/boggle-solver
+  description: Find all words for a boggle (or similar) word puzzle.
+
+---
+
+<h1>Projects</h1>
+
+<p>I've published a few of my personal projects to: <a href="https://github.com/yummysoup/">github.com/yummysoup/</a></p>
+
+<div class="projects">
+  {% for proj in page.projects %}
+    <div class="project">
+      <h2>{{ proj.name }}</h2>
+      <p>{{proj.description}}</p>
+      <p class="links">{% if proj.demo %}<a href="{{proj.demo}}">&#x25B6; demo</a> {% endif %}<a href="{{proj.repo}}"><img src="/assets/github-mark.svg"> repo</a></p>
+    </div>
+  {% endfor %}
+</div>
