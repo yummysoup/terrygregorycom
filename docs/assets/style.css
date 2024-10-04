@@ -122,7 +122,7 @@ blockquote {
 }
 
 .project {
-  margin: 2em;
+  margin: 2em 0;
   padding: 1em;
   background-color: #faf2e0;
   border-top: 0.1em solid #f8eacc;
@@ -148,4 +148,12 @@ blockquote {
 
 .project .links {
   margin-top: 1em;
+}
+
+main ul {
+  margin: 0.5em 0 0.5em 1em;
+}
+
+main li {
+  margin: 0.5em 0 0.5em 0.5em;
 }
