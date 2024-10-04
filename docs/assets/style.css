@@ -123,7 +123,7 @@ blockquote {
 
 .project {
   margin: 2em 0;
-  padding: 1em;
+  padding: 0 1em 1em 1em;
   background-color: #faf2e0;
   border-top: 0.1em solid #f8eacc;
   border-bottom: 0.2em solid #f8eacc;
