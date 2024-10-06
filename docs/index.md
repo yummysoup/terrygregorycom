@@ -15,3 +15,6 @@ to harass or urge persistently; pester; nag:
 
 > Why must sites constantly badger me with cookie popups, newsletter sign-up forms, content paywalls, and donation nags?!
 
+## conclusion
+
+Sorry badger, I have nothing good to say of you.
