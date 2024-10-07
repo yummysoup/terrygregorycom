@@ -166,3 +166,14 @@ footer img {
   bottom: -0.5em;
   margin-top: -0.5em;
 }
+
+code {
+  font-family: Consolas, Monaco, monospace;
+  white-space: pre;
+  display: block;
+  overflow-x: auto;
+  background-color: #faf2e0;
+  border: 0.1em solid #f8eacc;
+  padding: 0.5em;
+  margin: 0.5em 1em;
+}

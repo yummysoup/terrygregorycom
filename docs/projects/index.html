@@ -40,7 +40,49 @@ projects:
 <h2>Other Projects</h2>
 <p>I haven't published these yet, either because they have some embedded personal info or because I ran out of Round Tuits.</p>
 <ul>
-  <li>jsonpretty: format JSON in balanced compact and readable way (using newlines only when a branch can't fit inline at a specified width)</li>
+  <li>jsonpretty: format JSON in balanced compact and readable way (using newlines only when a branch can't fit inline at a specified width)
+    <ul><li>E.g. this:
+    <code>{"query":{"bool":{"must":[{"match":{"name":"doe"}},{"range":{"gpa":{"gte":3.6,"lte":3.9}}},{"term":{"grad_year":2022}}]}}}</code></li>
+    <li>becomes:
+    <code>{
+  "query": {
+    "bool": {
+      "must": [
+        {"match": {"name": "doe"}},
+        {"range": {"gpa": {"gte": 3.6, "lte": 3.9}}},
+        {"term": {"grad_year": 2022}}
+      ]
+    }
+  }
+}</code></li>
+    <li>which is much nicer than:
+    <code>{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "match": {
+            "name": "doe"
+          }
+        },
+        {
+          "range": {
+            "gpa": {
+              "gte": 3.6,
+              "lte": 3.9
+            }
+          }
+        },
+        {
+          "term": {
+            "grad_year": 2022
+          }
+        }
+      ]
+    }
+  }
+}</code></li></ul>
+  </li>
   <li>sensors: post temperature, humidity, CO<sub>2</sub>, and other sensor data from Arduino and Raspberry PI to CloudWatch Metrics for correlation, trending, and fun (to retain control of the data and avoid IoT vendor lock-in)</li>
   <li>Kinesis PutRecords: put records to an AWS Kinesis stream from a newline-delimited source file. Good for seeding microservices that process records from Kinesis</li>
   <li>jellybean hunt: printable jellybean scavenger hunt for a child's birthday</li>
