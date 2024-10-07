@@ -86,6 +86,7 @@ nav a {
   padding: 0.2em 0.5em;
   display: block;
   text-decoration: none;
+  color: black;
 }
 
 nav a:hover {
