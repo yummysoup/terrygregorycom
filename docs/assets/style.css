@@ -59,7 +59,7 @@ h3 {
 }
 
 p {
-  margin: 0.1em 0;
+  margin: 0.5em 0 0.5em;
 }
 
 nav {
@@ -91,6 +91,7 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
+  color: black;
 }
 
 nav a:visited, nav a:active {
@@ -124,7 +125,7 @@ blockquote {
 
 .project {
   margin: 2em 0;
-  padding: 0 1em 1em 1em;
+  padding: 0 1em 0.5em 1em;
   background-color: #faf2e0;
   border-top: 0.1em solid #f8eacc;
   border-bottom: 0.2em solid #f8eacc;
@@ -140,6 +141,7 @@ blockquote {
   background: #fee07d;
   border-radius: 0.2em;
   border: 0.1em solid hsl(46, 100%, 65%);
+  font-weight: normal;
 }
 
 .project a img {
@@ -151,12 +153,26 @@ blockquote {
   margin-top: 1em;
 }
 
+main a, main a:hover, main a:active, main a:visited {
+  color: #8a531b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main a:hover {
+  text-decoration: underline;
+}
+
 main ul {
   margin: 0.5em 0 0.5em 1em;
 }
 
 main li {
   margin: 0.5em 0 0.5em 0.5em;
+}
+
+footer {
+  background-color: #faf2e0;
 }
 
 footer img {
